@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.MainPage"
+             BackgroundColor="Black">
+
+    <StackLayout>
+
+        <Image x:Name="logo" Source="logo_agora_vai.png" />
+
+        <ScrollView>
+
+            <Grid ColumnDefinitions="*,*"  RowDefinitions="300, 300, 300" >
+
+                <ImageButton x:Name="btnBatman" Clicked="btnBatman_Clicked" Grid.Column="0" Grid.Row="0" Aspect="Fill" />
+                <ImageButton x:Name="btnMorbius" Clicked="btnMorbius_Clicked" Grid.Column="1" Grid.Row="0" Aspect="Fill" />
+                <ImageButton x:Name="btnCoraline" Clicked="btnCoraline_Clicked" Grid.Column="0" Grid.Row="1" Aspect="Fill"  />
+                <ImageButton x:Name="btnDoutor" Clicked="btnDoutor_Clicked" Grid.Column="1" Grid.Row="1" Aspect="Fill"  />
+                <ImageButton x:Name="btnMoonfall" Clicked="btnMoonfall_Clicked" Grid.Column="0" Grid.Row="2" Aspect="Fill"  />
+                <ImageButton x:Name="btnDuna" Clicked="btnDuna_Clicked" Grid.Column="1" Grid.Row="2" Aspect="Fill"  />
+
+            </Grid>
+        </ScrollView>
+
+    </StackLayout>
+</ContentPage>

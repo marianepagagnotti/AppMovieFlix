@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.NovaPasta.batman"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <WebView x:Name="batman_visu"
+                         Source="https://www.youtube.com/embed/w2zipr-sJ1I"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Black"/>
+
+                <Grid ColumnDefinitions="*,*"
+                    RowDefinitions="20,20,300,20">
+                    
+                    <Image x:Name="Batman"  Grid.Column="0" Grid.Row="2"/>
+                    <StackLayout Grid.Column="1" Grid.Row="2">
+                        <Label Text="GÊNERO:" TextColor="Red" />
+                        <Label Text="Ação/Suspense" TextColor="White"/> 
+                        <Label Text="SINÓPSE:" TextColor="Red" />
+                        <Label Text="Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população."  TextColor="White"/>
+            </StackLayout>
+
+
+            </Grid>
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

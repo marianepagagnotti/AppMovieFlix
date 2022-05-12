@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.NovaPasta.coraline"
+             BackgroundColor="Black">
+    
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <WebView x:Name="coraline_visu"
+                         Source="https://youtu.be/nJvYajDEHL4"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Black"/>
+
+                <Grid ColumnDefinitions="*,*"
+                    RowDefinitions="20,20,300,20">
+
+                    <Image x:Name="Coraline"  Grid.Column="0" Grid.Row="2"/>
+                    <StackLayout Grid.Column="1" Grid.Row="2">
+                        <Label Text="GÊNERO:" TextColor="Red" />
+                        <Label Text="Animação/Suspense" TextColor="White"/>
+                        <Label Text="SINÓPSE:" TextColor="Red" />
+                        <Label Text="Enquanto explora sua nova casa à noite, a pequena Coraline descobre uma porta secreta que contém um mundo parecido com o dela, porém melhor em muitas maneiras. Todos têm botões no lugar dos olhos, os pais são carinhosos e os sonhos de Coraline viram realidade por lá."  TextColor="White"/>
+                    </StackLayout>
+
+
+                </Grid>
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

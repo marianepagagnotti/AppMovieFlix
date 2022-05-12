@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.NovaPasta.moonfall"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <WebView x:Name="moonfall_visu"
+                         Source="https://www.youtube.com/watch?v=l4sDvkgh9vI"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Black"/>
+
+                <Grid ColumnDefinitions="*,*"
+                    RowDefinitions="20,20,300,20">
+
+                    <Image x:Name="Moonfall"  Grid.Column="0" Grid.Row="2"/>
+                    <StackLayout Grid.Column="1" Grid.Row="2">
+                        <Label Text="GÊNERO:" TextColor="Red" />
+                        <Label Text="Ficção científica" TextColor="White"/>
+                        <Label Text="SINÓPSE:" TextColor="Red" />
+                        <Label Text="No filme Moonfall, de Roland Emmerich, uma força misteriosa tira a Lua da sua órbita em torno da Terra e envia-a numa rota de colisão capaz de aniquilar a vida como a conhecemos. Semanas antes do impacto, e com o mundo à beira de aniquilação, Jo Fowler (Halle Berry), executiva e ex-astronauta da NASA está convencida que tem a chave para nos salvar a todos"  TextColor="White"/>
+                    </StackLayout>
+
+
+                </Grid>
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

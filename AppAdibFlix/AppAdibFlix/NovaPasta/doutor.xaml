@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.NovaPasta.doutor"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <WebView x:Name="dt_estranho_visu"
+                         Source="https://youtu.be/j-pBk19cJpI"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Black"/>
+
+                <Grid ColumnDefinitions="*,*"
+                    RowDefinitions="20,20,300,20">
+
+                    <Image x:Name="Doutor_estranho"  Grid.Column="0" Grid.Row="2"/>
+                    <StackLayout Grid.Column="1" Grid.Row="2">
+                        <Label Text="GÊNERO:" TextColor="Red" />
+                        <Label Text="Aventura/Ação" TextColor="White"/>
+                        <Label Text="SINÓPSE:" TextColor="Red" />
+                        <Label Text="O aguardado filme trata da jornada do Doutor Estranho rumo ao desconhecido. Além de receber ajuda de novos aliados místicos e outros já conhecidos do público, o personagem atravessa as realidades alternativas incompreensíveis e perigosas do Multiverso para enfrentar um novo e misterioso adversário."  TextColor="White"/>
+                    </StackLayout>
+
+
+                </Grid>
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

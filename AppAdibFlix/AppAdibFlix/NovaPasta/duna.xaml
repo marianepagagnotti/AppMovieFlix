@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.NovaPasta.duna"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <WebView x:Name="duna_visu"
+                         Source="https://youtu.be/mxRJOwVwbm0"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Black"/>
+
+                <Grid ColumnDefinitions="*,*"
+                    RowDefinitions="20,20,300,20">
+
+                    <Image x:Name="Duna"  Grid.Column="0" Grid.Row="2"/>
+                    <StackLayout Grid.Column="1" Grid.Row="2">
+                        <Label Text="GÊNERO:" TextColor="Red" />
+                        <Label Text="Ficção científica" TextColor="White"/>
+                        <Label Text="SINÓPSE:" TextColor="Red" />
+                        <Label Text="Paul Atreides é um jovem brilhante, dono de um destino além de sua compreensão. Ele deve viajar para o planeta mais perigoso do universo para garantir o futuro de seu povo."  TextColor="White"/>
+                    </StackLayout>
+
+
+                </Grid>
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
